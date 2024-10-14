@@ -1,0 +1,10 @@
+body {
+    /* Лінійний градієнт з двома кольорами */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* Або для більш складного градієнта з кількома кольорами */
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b, #00c6ff, #0072ff); */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh; /* Висота на весь екран */
+}
