@@ -1,0 +1,86 @@
+/* Стиль для всього тіла сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Оформлення заголовків */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #005f73;
+    margin-top: 20px;
+}
+
+/* Стилізація форми */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилізація лейблів і полів введення */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стилізація чекбоксів та радіокнопок */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label input[type="checkbox"],
+label input[type="radio"] {
+    display: inline;
+    width: auto;
+}
+
+/* Стилізація кнопок */
+button[type="submit"],
+button[type="reset"] {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #005f73;
+}
+
+/* Адаптивне зображення */
+picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
