@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT.Startup - Подати заявку</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>IT.Startup</h1>
+        <nav>
+            <a href="index.html">Про нас</a>
+            <a href="photo.html">Опис</a>
+            <a href="apply.html">Подати заявку</a>
+        </nav>
+    </header>
+    
+    <section class="apply-form">
+        <h2>Подати заявку</h2>
+        <form id="applicationForm">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="button" onclick="submitApplication()">Надіслати</button>
+        </form>
+        <p id="confirmationMessage" style="display: none;">Дякуємо! Ваша заявка надіслана.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

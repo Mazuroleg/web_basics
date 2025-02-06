@@ -1,0 +1,219 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    header {
+        background-color: #000;
+        padding: 1em 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    header h1 {
+        color: #00f;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    nav a {
+        color: #00f;
+        margin: 0 1.5em;
+        text-decoration: none;
+        font-size: 1.2em;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #0af;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: calc(100vh - 160px);
+        padding: 2em 0;
+    }
+
+    .info {
+        background-color: #333;
+        color: #fff;
+        padding: 2em;
+        max-width: 40%;
+        font-size: 1.5em;
+        line-height: 1.5;
+        text-align: justify;
+        border-radius: 8px;
+    }
+
+    .image img {
+        max-height: 80vh;
+        width: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 2em;
+        justify-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .apply-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .apply-form h2 {
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .apply-form form {
+        width: 100%;
+    }
+
+    .apply-form label {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+        display: block;
+    }
+
+    .apply-form input,
+    .apply-form textarea {
+        width: 100%;
+        padding: 0.8em;
+        font-size: 1em;
+        margin-bottom: 1.5em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .apply-form button {
+        width: 100%;
+        padding: 0.8em;
+        font-size: 1.2em;
+        background-color: #00f;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .apply-form button:hover {
+        background-color: #0056b3;
+    }
+
+    #confirmationMessage {
+        color: green;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+
+    .single-photo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 80px);
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    .single-photo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media (max-width: 1200px) {
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        nav a {
+            font-size: 0.9em;
+        }
+    }
+
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.5em;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        nav a {
+            font-size: 1em;
+            margin: 0.5em 0;
+        }
+
+        .single-photo-container {
+            height: calc(100vh - 70px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.2em;
+        }
+
+        nav a {
+            font-size: 0.8em;
+        }
+    }
+    .description {
+        background-color: #f8f8f8;
+        padding: 2em;
+        border-radius: 8px;
+        max-width: 800px;
+        margin: 2em auto;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .description h2 {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    .description p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+    }
+    
